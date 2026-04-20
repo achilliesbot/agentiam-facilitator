@@ -1,0 +1,31 @@
+{
+  "name": "agentiam-facilitator",
+  "version": "0.1.0",
+  "description": "x402 facilitator on Base Mainnet. verify / settle / supported. Non-custodial USDC settlement.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "genkey": "tsx scripts/genkey.ts"
+  },
+  "dependencies": {
+    "ethers": "^6.13.4",
+    "express": "^4.21.1",
+    "express-rate-limit": "^7.4.1",
+    "pg": "^8.13.1",
+    "pino": "^9.5.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.0",
+    "@types/pg": "^8.11.10",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.5"
+  },
+  "license": "Apache-2.0",
+  "repository": "github:achilliesbot/agentiam-facilitator"
+}
