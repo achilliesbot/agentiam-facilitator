@@ -1,7 +1,12 @@
 import { Pool } from "pg";
 
 export function makePool(url: string) {
-  return new Pool({ connectionString: url, max: 10 });
+  const needsSsl = /render\.com|sslmode=require/.test(url) || process.env.DATABASE_SSL === "true";
+  return new Pool({
+    connectionString: url,
+    max: 10,
+    ssl: needsSsl ? { rejectUnauthorized: false } : undefined,
+  });
 }
 
 export const SCHEMA_SQL = `
