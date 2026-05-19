@@ -26,6 +26,12 @@ npm install
 npm run dev
 ```
 
+## See also
+
+- [agentiam-recipes](https://github.com/achilliesbot/agentiam-recipes) — integration guides for the 18 AgentIAM x402 endpoints settled by this facilitator
+- [x402-paywall](https://github.com/achilliesbot/x402-paywall) — drop-in React kit for gating any site behind USDC-on-Base micropayments
+- Endpoint catalog: [achillesalpha.com/.well-known/x402](https://achillesalpha.com/.well-known/x402)
+
 ## License
 
 Apache-2.0
